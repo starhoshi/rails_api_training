@@ -13,17 +13,12 @@ class Users::OmniauthCallbacksController < ApplicationController
     if @user.persisted?
       flash[:notice] = I18n.t('devise.omniauth_callbacks.success', kind: provider.capitalize)
       # sign_in_and_redirect @user, event: :authentication
-      redirect_to URI.encode("musiced://?token=#{@user.token}")
+      # redirect_to URI.encode("musiced://?token=#{@user.token}")
+      redirect_to URI.encode("http://localhost:3000?token=#{@user.token}")
     else
       # session["devise.#{provider}_data"] = request.env['omniauth.auth']
       # redirect_to new_user_registration_url
     end
-  end
-
-  def generate_url(url, params = {})
-    uri = URI(url)
-    uri.query = params.to_query
-    uri.to_s
   end
 
 end
