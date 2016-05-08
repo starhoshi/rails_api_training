@@ -75,7 +75,7 @@ class SongsController < ApplicationController
 
   def render_unauthorized
     self.headers['Authorization'] = 'Bearer realm="Application"'
-    render json: 'Bad credentials', status: 401
+    render json: {:message => "Unauthorized"}, status: 401
   end
 
   private
