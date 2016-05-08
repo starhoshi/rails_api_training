@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+  before_action :authenticate
   before_action :set_song, only: [:show, :edit, :update, :destroy]
 
   # GET /songs
@@ -59,6 +60,22 @@ class SongsController < ApplicationController
       format.html { redirect_to songs_url, notice: 'Song was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  protected
+  def authenticate
+    authenticate_token || render_unauthorized
+  end
+
+  def authenticate_token
+    authenticate_with_http_token do |token, options|
+      User.find_by(token: token)
+    end
+  end
+
+  def render_unauthorized
+    self.headers['Authorization'] = 'Bearer realm="Application"'
+    render json: 'Bad credentials', status: 401
   end
 
   private

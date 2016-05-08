@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a64a0a60-f171-4f04-9e9e-7ae931081312" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/songs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/songs_controller.rb" />
     </list>
     <ignored path="rails_api_training.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,8 +45,8 @@
       <file leaf-file-name="songs_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/songs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <state relative-caret-position="299">
+              <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -94,6 +92,7 @@
       <list>
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/songs_controller.rb" />
       </list>
     </option>
   </component>
@@ -379,12 +378,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1462664505083</updated>
-      <workItem from="1462664506542" duration="1196000" />
+      <workItem from="1462664506542" duration="2079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1196000" />
+    <option name="totallyTimeSpent" value="2079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -454,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/songs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="299">
+          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
           <folding />
         </state>
       </provider>
